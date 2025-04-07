@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimSound - Музыкальный сервис</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .hero .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .tracks {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .track {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .track:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .track img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        audio {
+            width: 100%; /* Задаем ширину проигрывателя */
+            margin-top: 10px; /* Отступ сверху */
+            border-radius: 5px; /* Скругление углов */
+            background-color: #f9f9f9; /* Фоновый цвет */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DimSound</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Треки</a></li>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Загрузить</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Слушай и загружай музыку</h2>
+            <a href="#" class="btn">Начать слушать</a>
+        </section>
+        
+        <section class="tracks">
+            <h2>Популярные треки</h2>
+            <div class="track">
+                <img src="images.jpg" alt="Птички">
+                <h3>Птички</h3>
+                <audio controls>
+                    <source src="Птица кричит САЛАМ АЛЕКУМ.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 DimSound. Все права защищены.</p>
+    </footer>
+</body
